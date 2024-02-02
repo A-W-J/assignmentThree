@@ -1,0 +1,20 @@
+package eParserMain;
+
+import java.io.IOException;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		//read sequences from a file
+		//initialize global b-ion set
+		//initialize global y-ion set
+		//iterate over each sequence
+			//for each sequence, create a FragmentMass object
+			//iterate over the b-ion fragment masses
+				//if a mass is less than 500 m/z, place it in the global b-ion set
+			//itearte over the y-ion fragment masses
+				//if a mass is less than 500 m/z, place it in the global y-ion set
+		//make a histogram for b-ions
+		//make a histogram for y-ions
+	}
+
+}

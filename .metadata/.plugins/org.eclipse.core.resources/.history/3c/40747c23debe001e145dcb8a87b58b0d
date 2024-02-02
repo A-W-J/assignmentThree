@@ -1,0 +1,35 @@
+package eParserMain;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		//read sequences from a file
+		String seqFilename = "C:\\Users\\alexw\\Documents\\Ohio State\\Searle Lab\\Projects\\assignmentThree\\ecoli_tryptic_peptide_sequences.txt";
+		String[] seqs = SeqArray.readSequences(seqFilename);
+		//initialize global b-ion set
+		ArrayList<Integer> bIons = new ArrayList<Integer>();
+		//initialize global y-ion set
+		ArrayList<Integer> yIons = new ArrayList<Integer>();
+		//iterate over each sequence
+		for(String sequence:seqs) {
+			//for each sequence, create a FragmentMass object
+			FragmentMasses frags = FragmentMasses.dataAssembly(sequence);
+			//iterate over the b-ion fragment masses
+			for(int bIon:frags.getbIons()) {
+				if(bIon < 500) {
+					bIons.add(bIon); //if a mass is less than 500 m/z, place it in the global b-ion set
+				}
+			}
+			//iterate over the y-ion fragment masses
+			for(int yIon:frags.getyIons()) {
+				if(yIon < 500) {
+					yIons.add(yIon); //if a mass is less than 500 m/z, place it in the global y-ion set
+				}
+			}
+		//make a histogram for b-ions
+		//make a histogram for y-ions
+	}
+
+}

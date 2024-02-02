@@ -1,0 +1,31 @@
+package eParserMain;
+
+import java.util.*;
+
+//this doesn't need to be an object
+public class AminoTable {
+	public static Hashtable<Character, Integer> makeAminoTable() {
+		Hashtable<Character, Integer> aminoTable = new Hashtable <Character, Integer>();
+		aminoTable.put('A', 71);
+		aminoTable.put('C', 160);
+		aminoTable.put('R', 156);
+		aminoTable.put('N', 114);
+		aminoTable.put('D', 115);
+		aminoTable.put('E', 129);
+		aminoTable.put('Q', 128);
+		aminoTable.put('G', 57);
+		aminoTable.put('H', 137);
+		aminoTable.put('I', 113);
+		aminoTable.put('L', 113);
+		aminoTable.put('K', 128);
+		aminoTable.put('M', 131);
+		aminoTable.put('F', 147);
+		aminoTable.put('P', 97);
+		aminoTable.put('S', 87);
+		aminoTable.put('T', 101);
+		aminoTable.put('W', 186);
+		aminoTable.put('Y', 163);
+		aminoTable.put('V', 99);
+		return aminoTable;
+	}
+}

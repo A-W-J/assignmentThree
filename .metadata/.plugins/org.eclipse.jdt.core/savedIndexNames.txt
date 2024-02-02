@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+C:\Users\alexw\Documents\Ohio State\Searle Lab\Projects\assignmentThree\.metadata\.plugins\org.eclipse.jdt.core
+2545063751.index
+3307725968.index
+753756441.index
+4049879944.index
+2214918967.index
+1865797976.index
+670645572.index

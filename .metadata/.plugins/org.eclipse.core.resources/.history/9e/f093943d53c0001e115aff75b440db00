@@ -1,0 +1,12 @@
+package eParserMain;
+
+import java.util.ArrayList;
+
+import org.jfree.chart.JFreeChart;
+
+public class Histogram {
+	public static JFreeChart drawHistogram(ArrayList<Integer> ions) {
+		
+	}
+
+}
